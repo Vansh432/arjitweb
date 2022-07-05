@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contaier{
+  /* position: relative; */
+  min-height: 100vh;
+
+}
+.navBar{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px 30px 0px 10px;
+  border: 2px solid red;
+  height: 390px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border:2px solid red; */
+  text-decoration: none;
+  list-style-type: none;
+  width: 600px;
+}
+.logo h2{
+color: #fff;
+}
+nav li{
+ 
+  position: relative;
+  list-style: none; 
+
+}
+nav li a{
+  position: relative;
+  /* color: #000;
+   */
+   color: #fff;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  /* border:2px solid red; */
+}
+nav li a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transition: 0.5s;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: #fff;
+}
+nav li a:hover::before{
+  width: 100%;
+  color: #fff;
+}
+
+nav ul ion-icon{
+  font-size: large;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+}
+#arrow{
+  left:63px;
+ position: absolute;
+  display: inline;
+  /* background-color: crimson; */
+  transition: 0.4s;
+}
+/* #Project:hover{
+transform: rotate(90deg);
+  
+} */
+#project a:hover #arrow{
+  /* border:  2px solid red; */
+  transform: rotate(90deg);
+}
+.contaier .navBar img{
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+ .navBar h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%,-50%);
+  font-size: 3.4rem;
+}
+.navBar h1 span{
+  color: aqua;
+  font-weight: 900;
+  font-family: 'Acme', sans-serif;
+  font-size: 3.4rem;
+}
+
+.Self_Intro{
+  border: 2px solid red;
+}
+
+.Self_Intro .self_contain .image{
+width: 550px;
+height: 400px;
+border: 2px solid rgb(0, 187, 255);
+}
+.Self_Intro .self_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+ img{
+   object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Self_Intro .self_contain .description{
+  margin: 20px;
+}
+.Self_Intro .self_contain .description h1{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.Self_Intro .self_contain .description p{
+  width: 450px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 2px solid red;
+}
+.Self_Intro .Image_infor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.Self_Intro .Image_infor ion-icon{
+  font-size: 3.5rem;
+  
+}
+
+/* About_me */
+.heading_About{
+  padding: 22px 21px 22px 154px;
+  font-size: 1.5rem;
+  background-color: rgb(237, 235, 235);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.description_About{
+  padding: 32px 132px 12px 154px;
+}
+.description_About h2{
+  font-size: 1.7rem;
+}
+.description_About p{
+  margin: 10px 1px 0px 0px;
+  text-align: left;
+  word-spacing: 2px;
+  font-family:'Times New Roman', Times, serif;
+}
+/* .About_Me .education{
+  
+} */
+.About_Me .description_About .research{
+margin: 10px 0px 50px 0px ;
+}
+.About_Me .description_About .education{
+  margin: 45px 0px 50px 0px ;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 30px;
+  background-color: rgb(0, 179, 255);
+}
+
+/* Contact */
+.contact{
+  padding: 40px 50px 20px 170px;
+}
+.contact .Email ul{
+  list-style-type:disc;
+  display:list-item;
+  list-style-position:initial;
+  color: cadetblue;
+
+}
+.contact h3{
+  margin: 10px 0px 10px 0px;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+
